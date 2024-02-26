@@ -4,34 +4,34 @@ const {
     Client,
     ChatInputCommandInteraction,
     EmbedBuilder
-} = require("discord.js");
+} = require('discord.js');
 
-const configSchema = require("../../schemas/configSchema");
-const setupSchema = require("../../schemas/setupSchema");
+const configSchema = require('../../schemas/configSchema');
+const setupSchema = require('../../schemas/setupSchema');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName("config")
-        .setDescription("Config the ticket system.")
+        .setName('config')
+        .setDescription('Config the ticket system.')
         .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
         .addChannelOption(channel =>
             channel
-                .setName("transcription_channel")
-                .setDescription("Channel to send the transcript of closed tickets.")
+                .setName('transcription_channel')
+                .setDescription('Channel to send the transcript of closed tickets.')
                 .addChannelTypes(0)
                 .setRequired(true)
         )
         .addChannelOption(channel =>
             channel
-                .setName("logging_channel")
-                .setDescription("Channel to send the log of the tickets.")
+                .setName('logging_channel')
+                .setDescription('Channel to send the log of the tickets.')
                 .addChannelTypes(0)
                 .setRequired(true)
         )
         .addRoleOption(role =>
             role
-                .setName("support_role")
-                .setDescription("Select the role that will support the tickets.")
+                .setName('support_role')
+                .setDescription('Select the role that will support the tickets.')
                 .setRequired(true)
         ),
 
@@ -48,19 +48,19 @@ module.exports = {
         if (!setupData) return interaction.reply({
             embeds: [
                 new EmbedBuilder()
-                    .setAuthor({ name: "Error", iconURL: "https://i.imgur.com/UhD2EUb.png" })
-                    .setDescription("You have not created a ticket system yet!")
+                    .setAuthor({ name: 'Error', iconURL: 'https://i.imgur.com/UhD2EUb.png' })
+                    .setDescription('You have not created a ticket system yet!')
                     .addFields(
-                        { name: "To create one run:", value: "`/setup <channel> <category>`." }
+                        { name: 'To create one run:', value: "`/setup <channel> <category>`." }
                     )
-                    .setColor("Red"),
+                    .setColor('Red'),
             ],
             ephemeral: true
         });
 
-        const channelTranscript = options.getChannel("transcription_channel");
-        const channelLog = options.getChannel("logging_channel");
-        const supportRole = options.getRole("support_role");
+        const channelTranscript = options.getChannel('transcription_channel');
+        const channelLog = options.getChannel('logging_channel');
+        const supportRole = options.getRole('support_role');
 
         configSchema.findOne({ guildId: guild.id }).then((data) => {
             if (data) {
@@ -88,14 +88,14 @@ module.exports = {
         return interaction.reply({
             embeds: [
                 new EmbedBuilder()
-                    .setTitle("Ticket System Config")
-                    .setDescription("Ticket config complete!")
+                    .setTitle('Ticket System Config')
+                    .setDescription('Ticket config complete!')
                     .addFields(
-                        { name: "Channel transcript:", value: `${channelTranscript}`, inline: true },
-                        { name: "Channel log:", value: `${channelLog}`, inline: true },
-                        { name: "Support role:", value: `${supportRole}`, inline: false }
+                        { name: 'Channel transcript:', value: `${channelTranscript}`, inline: true },
+                        { name: 'Channel log:', value: `${channelLog}`, inline: true },
+                        { name: 'Support role:', value: `${supportRole}`, inline: false }
                     )
-                    .setColor("Green"),
+                    .setColor('Green'),
             ],
             ephemeral: true
         });
