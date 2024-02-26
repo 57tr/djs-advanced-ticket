@@ -7,9 +7,9 @@ This is an advanced ticket system with a database for different guilds, it is ea
 <a href="https://github.com/57tr"><img src="https://img.shields.io/github/followers/57tr?style=for-the-badge"/></a>
 
 ## Dependencies:
-> The dependencies used are [mongoose](https://www.npmjs.com/package/mongoose) and [captcha-canvas](https://www.npmjs.com/package/captcha-canvas).
+> The dependencies used are [discord.js](https://discord.js.org/#/) and [mongoose](https://www.npmjs.com/package/mongoose).
 ```
-npm i mongoose
+npm i discord.js mongoose
 ```
 
 # Instructions:
