@@ -1,4 +1,4 @@
-![DBT Image](https://cdn.discordapp.com/attachments/1082534981961781258/1082540823058579526/djs-advanced-verification.jpg)
+![DBT Image](https://cdn.discordapp.com/attachments/1082534981961781258/1211855299447619664/djs-advanced-ticket.png)
 
 # djs-advanced-ticket
 This is an advanced ticket system with a database for different guilds, it is easy to use and adapt. You can prevent raids on your discord and bot injections.
@@ -22,13 +22,13 @@ npm i discord.js mongoose discord-html-transcripts
 > To connect to mongodb with your discord bot make sure to add this to your ready.js event or index.js file.
 ```js
 // Add this to the top of the file
-const { connect } = require("mongoose");
+const { connect } = require('mongoose');
 
 // Add this to your ready.js or index.js file
 await connect(MONGO_URI).then(() => {
-    console.log(`Successfully connected to MongoDB!`);
+    console.log('Successfully connected to MongoDB!);
 }).catch((error) => {
-    console.log(`Error connecting to MongoDB!`, error);
+    console.log('Error connecting to MongoDB!', error);
 });
 ```
 
