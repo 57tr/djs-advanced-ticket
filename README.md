@@ -1,4 +1,4 @@
-![DBT Image](https://cdn.discordapp.com/attachments/1082534981961781258/1211855299447619664/djs-advanced-ticket.png)
+![DBT Image](https://cdn.discordapp.com/attachments/1082534981961781258/1211855299447619664/djs-advanced-ticket.jpg)
 
 # djs-advanced-ticket
 This is an advanced ticket system with a database for different guilds, it is easy to use and adapt. You can prevent raids on your discord and bot injections.
