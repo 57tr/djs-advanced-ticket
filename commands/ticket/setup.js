@@ -35,6 +35,9 @@ module.exports = {
                 .setName('description')
                 .setDescription('The description of the embed in the ticket system panel.')
         ),
+    /**
+     * ! Check the order of how you pass parameters in your slashcommand handler
+     */
 
     /**
      * @param {Client} client
@@ -60,10 +63,9 @@ module.exports = {
 
         setupSchema.findOne({ guildId: guild.id }).then(async (data) => {
             if (data) {
-
                 let msgDelete;
                 const ch = guild.channels.cache.get(data.channelId);
-                if (ch) msgDelete = await ch.messages.fetch(data.messageId);
+                if (ch) msgDelete = await ch.messages.fetch(data.messageId).catch(() => { });
                 if (msgDelete) await msgDelete.delete().catch(() => { });
 
                 data.channelId = channel.id;
@@ -84,6 +86,7 @@ module.exports = {
                         ephemeral: true,
                     });
                 });
+
             } else {
                 const dataFinish = await new setupSchema({
                     guildId: guild.id,

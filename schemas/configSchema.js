@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
 const config = new Schema({
     guildId: {
@@ -18,4 +18,4 @@ const config = new Schema({
     }
 });
 
-module.exports = model("configSchema", config)
+module.exports = model('configSchema', config);

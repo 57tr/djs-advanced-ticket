@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
 const ticket = new Schema({
     guildId: {
@@ -19,4 +19,4 @@ const ticket = new Schema({
     }
 });
 
-module.exports = model("ticketSchema", ticket)
+module.exports = model('ticketSchema', ticket);

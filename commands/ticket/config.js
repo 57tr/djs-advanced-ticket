@@ -34,6 +34,9 @@ module.exports = {
                 .setDescription('Select the role that will support the tickets.')
                 .setRequired(true)
         ),
+    /**
+     * ! Check the order of how you pass parameters in your slashcommand handler
+     */
 
     /**
      * @param {Client} client
