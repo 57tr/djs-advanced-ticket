@@ -7,9 +7,9 @@ This is an advanced ticket system with a database for different guilds, it is ea
 <a href="https://github.com/57tr"><img src="https://img.shields.io/github/followers/57tr?style=for-the-badge"/></a>
 
 ## Dependencies:
-> The dependencies used are [discord.js](https://discord.js.org/#/) and [mongoose](https://www.npmjs.com/package/mongoose).
+> The dependencies used are [discord.js](https://discord.js.org/#/), [mongoose](https://www.npmjs.com/package/mongoose) and [discord-html-transcripts](https://www.npmjs.com/package/discord-html-transcripts).
 ```
-npm i discord.js mongoose
+npm i discord.js mongoose discord-html-transcripts
 ```
 
 # Instructions:
@@ -33,7 +33,7 @@ await connect(MONGO_URI).then(() => {
 ```
 
 # Preview
-https://user-images.githubusercontent.com/96021196/223345641-3dc03144-f2f1-46b1-ae12-60731af035b6.mp4
+
 
 # Contributing:
 > If you want to contribute create a fork of this project and when you are done editing it update the fork and create a pull request.
