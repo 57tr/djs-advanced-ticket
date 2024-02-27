@@ -1,4 +1,4 @@
-![DBT Image](https://cdn.discordapp.com/attachments/1082534981961781258/1211855299447619664/djs-advanced-ticket.png)
+![DBT Image](https://github.com/57tr/djs-advanced-ticket/assets/96021196/0b275415-dec1-4f5e-ae0f-ad6a0ab5dc37)
 
 # djs-advanced-ticket
 This is an advanced ticket system with a database for different guilds, it is easy to use and adapt. You can prevent raids on your discord and bot injections.
@@ -26,14 +26,14 @@ const { connect } = require('mongoose');
 
 // Add this to your ready.js or index.js file
 await connect(MONGO_URI).then(() => {
-    console.log('Successfully connected to MongoDB!);
+    console.log('Successfully connected to MongoDB!');
 }).catch((error) => {
     console.log('Error connecting to MongoDB!', error);
 });
 ```
 
 # Preview
-
+https://github.com/57tr/djs-advanced-ticket/assets/96021196/184e3378-3c29-4290-9042-af16a5f29d09
 
 # Contributing:
 > If you want to contribute create a fork of this project and when you are done editing it update the fork and create a pull request.
