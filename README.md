@@ -1,7 +1,8 @@
 ![DBT Image](https://github.com/57tr/djs-advanced-ticket/assets/96021196/0b275415-dec1-4f5e-ae0f-ad6a0ab5dc37)
 
 # djs-advanced-ticket
-This is an advanced ticket system with a database for different guilds, it is easy to use and adapt. You can prevent raids on your discord and bot injections.
+This ticket system with transcripts is fully configurable, you can change the transcripts channel, tickets channel, and more! This system uses embeds, and buttons.
+<!--This is an advanced ticket system with a database for different guilds, it is easy to use and adapt. This ticket system with transcripts is fully configurable, you can change the transcripts channel, tickets channel, and more! This system uses embeds, and buttons.-->
 
 <a href="https://github.com/57tr/djs-advanced-ticket"><img src= "https://img.shields.io/github/stars/57tr/djs-advanced-ticket?style=for-the-badge"/></a>
 <a href="https://github.com/57tr"><img src="https://img.shields.io/github/followers/57tr?style=for-the-badge"/></a>
