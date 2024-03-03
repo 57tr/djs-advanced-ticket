@@ -9,7 +9,7 @@ This ticket system with transcripts is fully configurable, you can change the tr
 
 ## Dependencies:
 > The dependencies used are [discord.js](https://discord.js.org/#/), [mongoose](https://www.npmjs.com/package/mongoose) and [discord-html-transcripts](https://www.npmjs.com/package/discord-html-transcripts).
-```
+```bash
 npm i discord.js mongoose discord-html-transcripts
 ```
 
